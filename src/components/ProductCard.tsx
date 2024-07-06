@@ -1,5 +1,7 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Box ,Divider } from "@mui/material";
+
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 export interface Product {
   name: string;
@@ -47,7 +49,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Box
             sx={{
               position: "relative",
-              left: "-150px",
+              left: "-240px",
               display: "flex",
               flexDirection: "column",
             }}
@@ -72,7 +74,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               </Typography>
             </Box>
           </Box>
-
+                    
+         
+          
           {/* i tried to make the text align the self so it show in a straing line but it didnt worked out hope you can figure it out */}
           {/* never mind i figiured it out some how */}
 
@@ -80,7 +84,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             sx={{
               display: "flex",
               position: "absolute",
-              left: "70vw",
+              left: "60vw",
               textAlign: "left",
             }}
           >
@@ -100,6 +104,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 <span>{product.wholesale_price}</span>
               </Typography>
             </Box>
+             <BsThreeDotsVertical style={{position:'absolute', left:'25vw' ,bottom:'-5px'}} size={25}/>
           </Box>
         </Box>
       </CardContent>
