@@ -104,7 +104,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 <span>{product.wholesale_price}</span>
               </Typography>
             </Box>
-             <BsThreeDotsVertical style={{position:'absolute', left:'25vw' ,bottom:'-5px'}} size={25}/>
+             <BsThreeDotsVertical style={{position:'absolute', left:'25vw' ,bottom:'-5px'}} size={25 }/>
           </Box>
         </Box>
       </CardContent>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import ProductList from './components/ProductList';
+import SideFilter from './components/SideFilter';
 
 const App: React.FC = () => {
   return (
@@ -8,7 +9,13 @@ const App: React.FC = () => {
       <Typography variant="h4" gutterBottom align="center" marginTop={2}>
         Product Inventory
       </Typography>
-      <ProductList />
+        <Box sx={{display:'flex' }}>
+          <Box sx={{position:'relative',left:'0'}}>
+
+          <SideFilter/>
+          </Box>
+         <ProductList />
+        </Box>
     </Container>
   );
 };
