@@ -19,7 +19,7 @@ interface ProductCardProps {
   cardWidth: string | number;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product, cardWidth }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, cardWidth,left }) => {
   return (
     <Card
       sx={{
@@ -77,7 +77,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, cardWidth }) => {
             sx={{
               display: "flex",
               position: "absolute",
-              left: "60vw",
+              left: left,
               textAlign: "left",
             }}
           >
