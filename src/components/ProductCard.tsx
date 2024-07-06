@@ -97,14 +97,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               </Typography>
             </Box>
             <Box sx={{ marginLeft: "20px"  ,position:'absolute' ,left:"8vw"}}>
-              <Typography variant="body2" width={300}>
+              <Typography variant="body2" width={150}>
                 <span>Wholesale Price</span>
               </Typography>
               <Typography sx={{position:'relative' ,bottom:'-20px'}} variant="body2" color="text.secondary">
                 <span>{product.wholesale_price}</span>
               </Typography>
             </Box>
-             <BsThreeDotsVertical style={{position:'absolute', left:'25vw' ,bottom:'-5px'}} size={25 }/>
+             <BsThreeDotsVertical style={{position:'absolute', left:'17vw' ,bottom:'-5px'}} size={25 }/>
           </Box>
         </Box>
       </CardContent>
