@@ -27,12 +27,12 @@ const App: React.FC = () => {
     // </Container>
     <>
     <ProductTopBar/>
-    <Box sx={{display:"flex"}}>
-      <Box sx={{width:'40vw'}}>
+    <Box sx={{display:"flex", flexWrap:'wrap'}}>
+      <Box sx={{width:'40vw' ,margin:'0 0 0 10px'}}>
          <ImgCard/>
          <ProductDetailCard/>
       </Box>
-      <Box sx={{width:'40vw'}}>
+      <Box sx={{width:'40vw' ,margin:'0 10px 0 0'}}>
 
       <ProductList cardWidth={cardWidth2} left={left2}/>
       </Box>

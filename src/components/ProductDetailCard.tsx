@@ -3,7 +3,7 @@ import React from 'react'
 
  const ProductDetailCard: React.FC = () => {
     return(
-       <Card>
+       <Card sx={{margin:'20px 0'}}>
         <CardContent>
         <Typography variant="body1" color="initial"> Description</Typography>
         <Divider/>
@@ -24,7 +24,7 @@ import React from 'react'
               </Typography>
             </Box>
 
-            <Box sx={{position:'relative' , left:'-30%'}}>
+            <Box sx={{position:'relative' , left:'-30%' }}>
             <Typography color='text.primary'>
                  red
               </Typography>

@@ -13,7 +13,8 @@ export default function ImgCard() {
           margin:'15px',
           padding:'10px',
           position:'relative',
-          left:'-15px'
+          left:'-15px',
+          borderRadius:'20px'
         }}/>
         
       
