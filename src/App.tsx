@@ -4,6 +4,8 @@ import ProductList from "./components/ProductList";
 import SideFilter from "./components/SideFilter";
 import TopBar from "./components/TopBar";
 import ImgCard from "./components/ImgCard";
+import ProductTopBar from "./components/ProductTopNav";
+import ProductDetailCard from "./components/ProductDetailCard";
 
 const App: React.FC = () => {
   const cardWidth = '80vw'; 
@@ -24,9 +26,11 @@ const App: React.FC = () => {
     //   </Box>
     // </Container>
     <>
+    <ProductTopBar/>
     <Box sx={{display:"flex"}}>
       <Box sx={{width:'40vw'}}>
          <ImgCard/>
+         <ProductDetailCard/>
       </Box>
       <Box sx={{width:'40vw'}}>
 
